@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+}
+header{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	padding: 0 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #00bfff;
+	z-index: 1000;
+}
+header .logo{
+	color: #fff;
+	font-size: 30px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+header ul{
+	position: relative;
+	display: flex;
+}
+header ul li{
+	position: relative;
+	list-style: none;
+}
+header ul li a{
+	position: relative;
+	padding: 10px 15px;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+}
+header ul li a:hover{
+	background: grey;
+}
+
+header ul li a.active{
+	background: transparent;
+	padding: 10px 20px;
+}
+
+.toggle{
+	display: none;
+}
+section{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh;
+	padding: 150px 100px 100px;
+}
+section img{
+	max-width: 350px;
+	height: 400px;
+	margin-left: 30px;
+}
+section h2{
+	font-size: 10.5em;
+	color: #00bfff;
+	text-transform: uppercase;
+	opacity: .4;
+	letter-spacing: .52em;
+}
+section p{
+	font-size: 18px;
+	color: grey;
+}
+section a{
+	display: inline-block;
+	padding: 8px 10px;
+	text-decoration: none;
+	font-size: 18px;
+	background-color: #00bfff;
+	color: #fff;
+	margin-top: 20px;
+}
+section:nth-child(odd){
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	background: #111;
+	color: #fff;
+}
+#home{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 105vh;
+	padding: 150px 100px 100px;
+	background-image: url(../media/background.jpg);
+	background-size: cover;
+}
+.jiji{
+	font-size: 10.5em;
+	color: #00bfff;
+	text-transform: uppercase;
+	opacity: .4;
+	letter-spacing: .52em;
+}
+.blog-a{
+	width: 400px;
+	height: 300px;
+	padding: 30px;
+	text-align: center;
+	background-color: #00bfff;
+}
+.blog-a img{
+	width: 100%;
+	height: 130px;
+	margin: 0;
+}
+.blog-b{
+	width: 400px;
+	height: 300px;
+	padding: 30px;
+		text-align: center;
+	background-color: #00bfff;
+}
+.blog-b img{
+	width: 100%;
+	height: 130px;
+	margin: 0;
+}
+.blogt{
+	margin-top: 20px;
+}
+#about{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 30vh;
+	padding: 50px 30px 30px;
+}
+#contact{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 105vh;
+	padding: 150px 100px 100px;
+	background-image: url(../media/bb.jpg);
+	background-size: cover;
+}
+
+form.contact-main{
+width: 100%;	 
+}
+.contact-sub {
+  padding: 20px;
+  background-color: #fff;
+}
+.contact-sub input[type=text], input[type=submit], input[type=button] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.contact-sub input[type=checkbox] {
+  margin-top: 16px;
+}
+.contact-sub input[type=submit], input[type=button] {
+  background-color: #34495e;
+  color: white;
+  border: none;
+}
+.contact-sub input[type=submit]:hover, input[type=button]:hover {
+  opacity: 0.8;
+}
+.contact-sub label{
+	color: #000;
+}
+.huh{
+	width: 400px;
+	height: 350px;
+	padding: 0;
+	margin-right: 10px;
+}
+video{
+	width: 400px;
+	height: 350px;
+}
+
+.nbox{
+	width: 400px;
+	height: 420px;
+	background: whitesmoke;
+	color: #fff;
+	left: 35%;
+	position: absolute;
+	box-sizing: border-box;	  
+	padding: 40px 30px;
+}
+.nbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.nbox input[type="password"]{
+	margin-bottom: 7px;
+}
+.nbox input[type="text"], input[type="password"], input[type="date"], input[type="email"]
+{
+	border: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+}
+.nbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #00bfff;
+	color: #fff;
+	margin-top: 20px;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.nbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: lightgreen;
+	color: #000;
+}
+
+/*update password*/
+#password{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh;
+	padding: 150px 250px 100px;
+	background-image: url(../media/zz.jpg);
+	background-size: cover;
+}
+.rbox{
+	width: 350px;
+	height: 420px;
+	background: whitesmoke;
+	color: #fff;
+	position: relative;
+	box-sizing: border-box;	  
+	padding: 40px 30px;
+}
+.rbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.rbox input[type="password"]{
+	margin-bottom: 7px;
+}
+.rbox input[type="text"], input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+}
+.rbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #00bfff;
+	color: #fff;
+	margin-top: 20px;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.rbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: lightgreen;
+	color: #000;
+}
+
+.zbox{
+	width: 350px;
+	height: 420px;
+	background: grey;
+}
+
+.zbox img{
+	width: 150px;
+	height: 150px;
+	margin: 50px 100px;
+}
+.zbox p{
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+}
+.zbox span{
+	text-transform: uppercase;
+	color: deepskyblue;
+}
+.zbox a{
+	display: inline-block;
+	padding: 8px 10px;
+	text-align: center;
+	margin: 0 80px;
+	text-decoration: none;
+	font-size: 18px;
+	background-color: #00bfff;
+	color: #fff;
+	margin-top: 20px;
+}
+
+/*edit profile*/
+#profile{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 135vh;
+	padding: 150px 100px 100px;
+	background-image: url(../media/zz.jpg);
+	background-size: cover;
+}
+.pbox{
+	width: 400px;
+	height: 640px;
+	background: whitesmoke;
+	color: #fff;
+	top: 20%;
+	left: 37%;
+	position: absolute;
+	box-sizing: border-box;	  
+	padding: 40px 30px;
+}
+.pbox p{
+	color: deepskyblue;
+}
+.pbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.pbox input[type="password"]{
+	margin-bottom: 7px;
+}
+.pbox input[type="text"], input[type="password"], input[type="date"], input[type="email"]
+{
+	border: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+}
+.pbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #00bfff;
+	color: #fff;
+	margin-top: 20px;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.pbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: lightgreen;
+	color: #000;
+}
+/*sign up*/
+.ronbox{
+	width: 400px;
+	height: 680px;
+	background: whitesmoke;
+	color: #fff;
+	top: 55%;
+	left: 47%;
+	position: absolute;
+	transform: translate(-40%,-50%);
+	box-sizing: border-box;	  
+	padding: 40px 30px;
+}
+.ronbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.ron-h{
+	color: #fff;
+	text-decoration: none;
+}
+.ron-h:hover{
+	background: grey;
+	padding: 10px 20px;
+}
+.ronbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.ronbox input[type="password"]{
+	margin-bottom: 7px;
+}
+.ronbox input[type="text"], input[type="password"], input[type="date"], input[type="email"]
+{
+	border: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+}
+.ronbox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #00bfff;
+	color: #fff;
+	margin-top: 20px;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.ronbox input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: lightgreen;
+	color: #000;
+}
+.ronbox a{
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+}
+.ronbox a:hover{
+	color: green;
+}
+#ron-main{
+	padding-top: 100px;
+	margin: 0;
+	padding: 0;
+	height: 110vh;
+	background-position: center;
+	font-family: sans-serif;
+}
+.ron-sign{
+	background: url('../media/signback.jpg');
+	background-size: cover;
+}
+.ront{
+	text-decoration: none;
+	font-size: 14px;
+	background-color: transparent;
+	color: deepskyblue;
+	line-height: 20px;
+}
+h1{
+	text-align: center;
+	color: #00bfff;
+}
+.alert{
+	width:100%;
+	height: 40px;
+	border-radius: 10px;
+	background-color:#000;
+	color: red;
+	font-weight: 100;
+	font-size: 11px;
+	line-height: 40px;
+	text-align: center;
+}
+
+/*footer*/
+footer{
+	width: 100%;
+	height: 150px;
+	background-color: grey;
+	display: flex;
+	padding: 0 100px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .logo{
+	color: deepskyblue;
+	font-size: 40px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+.ron-copyright{
+	font-size: 15px;
+	color: #fff;
+	letter-spacing: .5px;
+	font-weight: 700;
+}
+.ron-social img{
+	width: 45px;
+	height: 45px;
+	margin: 0 1px;
+}
+.ron-social img:hover{
+	transform: scale(1.2);
+}
+/*faqs*/
+#rona-popup{
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      padding-top: 100px; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%;
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.9); 
+      }
+.rv-popup {
+      z-index: 9;
+      max-width: 600px;
+      margin: 0 auto;
+      }
+.rj{
+  margin: 0;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  background-color: #fff;
+}
+.rp-1{
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  color: #537895;
+}
+#uu{
+	color: deepskyblue;
+}
+#gh{
+	color: deepskyblue;
+}
+/*back to top*/
+#ron-up{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+#ron-up:hover{
+  background-color: #555;
+}
+/*pop up page*/
+#ronPopup {
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      padding-top: 100px; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%;
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.9); 
+      }
+      .ron-popup {
+      z-index: 9;
+      max-width: 350px;
+      margin: 0 auto;
+      }
+.ronp{
+  margin: 0;
+  width: 100%;
+  height: 450px;
+  text-align: center;
+  background-color: grey;
+}
+.ronp img{
+  width: 220px;
+  height: 220px;
+  margin: 0 60px;
+}
+.ron-1{
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  color: #00bfff;
+}
+.ronp a{
+  font-size: 20px;
+  padding: 12px 20px;
+  margin: 30px 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: #00bfff;
+}
+.ronp a:hover{
+  background-color: #00bfff;
+}
+#ron-g{
+  font-size: 12px;
+  color: red;
+  float: bottom;
+  margin-top: 12px;
+  padding: 10px 0;
+}
+@media (max-width: 992px){
+	section{
+		padding: 100px 50px 5opx;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+	}
+	section h2{
+	font-size: 2.5em;
+	color: #00bfff;
+	text-transform: uppercase;
+	opacity: .4;
+	display: none;
+	letter-spacing: .52em;
+}
+#home{
+	padding: 150px 10px;
+}
+.nbox{
+	display: relative;
+	width: 320px;
+	left: 17%;
+}
+	section img{
+		margin: 50px 0 0;
+		max-width: 100%;
+	}
+	header ul{
+		position: absolute;
+		top: -100%;
+		left: 0;
+		width:100%;
+		height: calc(100vh - 80px);
+		padding: 50px 100px;
+		text-align: center;
+		overflow: auto;
+		transition: 0.5s;
+		background: #111;
+		flex-direction: column;
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	header.active ul{
+		opacity: 1;
+		top: 80px;
+		transform: translateY(0);
+	}
+	header ul li a{
+		margin: 5px 0;
+		font-size: 24px;
+	}
+	.toggle{
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+	}
+	.toggle:before{
+		content: '';
+		position: absolute;
+		top: 4px;
+		width: 100%;
+		height: 2px;
+		background: #fff;
+		z-index: 1;
+		box-shadow: 0 10px 0 #fff;
+		transition: 0.5s;
+	}
+	.toggle:after{
+		content: '';
+		position: absolute;
+		bottom: 4px;
+		width: 100%;
+		height: 2px;
+		background: #fff;
+		z-index: 1;
+		transition: 0.5s;
+	}
+	header.active .toggle:before{
+		top: 14px;
+		transform: rotate(45deg);
+		box-shadow: 0 0 0 #fff;
+	}
+	header.active .toggle:after{
+		bottom: 14px;
+		transform: rotate(-45deg);
+	}
+	footer{
+		flex-direction: column;
+		height: 200px;
+		padding: 15px 30px;
+	}
+	.ron-social img{
+	width: 35px;
+	height: 35px;
+	margin: 0 1px;
+}
+#password{
+	flex-direction: column;
+	padding: 150px 0px 100px;
+}
+.jiji{
+	font-size: 3.5em;
+	color: #00bfff;
+	margin-top: 150px;
+	text-transform: uppercase;
+	opacity: .6;
+	letter-spacing: .2em;
+}
+#home{
+	min-height: 120vh;
+}
+}
